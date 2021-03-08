@@ -53,15 +53,15 @@ const productschema = new mongoose.Schema({
             message: "please Select correct Category for Product"
         }
     },
-    seller: {
+    sellers: {
         type: String,
         required: [true, 'please enter product seller'],
 
     },
-    stock: {
+    stocks: {
         type: Number,
         required: [true, 'please enter product stock'],
-        maxlength: [5, "Product name cannot exceed 5 characters"]
+        maxlength: [5, "Product name cannot exceed 5 characters"],
         default: 0
     },
     numofReviews: {
